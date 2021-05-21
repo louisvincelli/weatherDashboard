@@ -1,48 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: "Trebuchet MS", 'Helvetica', 'sans-serif';
+    color: white;
+    background-image: url("clouds.jpg");
+    background-image: 100%;
 }
 
-body {
-    height: 100vh;
+.title {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
-    font-family: sans-serif;
-    color: white;
+    margin-top: 70px;
 }
 
-.location,.temperature {
-    height: 30px;
-    width: 50%;
+.search-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.temperature {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
-.degree-section {
+.information-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    cursor: pointer;
+    margin-right: 50px;
+    flex-wrap: nowrap;
+    padding: 10px;
 }
 
-.degree-section span {
+.main-card {
+    background-color: white;
+    color:black;
+    border-style: solid;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 100px;
+    width: 80vh;
+}
+
+.card {
+    background-color: teal;
+    padding: 10px;
     margin: 10px;
+    border-radius: 50px;
+    flex-direction: row;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    margin-right: 0px;
+}
+
+.forecast-title {
     font-size: 30px;
+    margin-right: 130px;
 }
 
-.degree-section h2 {
-    font-size: 40px;
-}
-
-#searchUser {
-    width: 80%;
-    height: 30%;
+ul {
+    list-style-type: none;
 }

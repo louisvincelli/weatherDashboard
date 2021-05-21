@@ -8,29 +8,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container searchContainer">
-        <div class="search card card-body">
-            <h1>Get The Weather For a Location</h1>
+    <div class="title">
+        <h1>Want to know the Weather?</h1>
+    </div>
+    <div class="search-container">
+        <div class="search-p">
             <p class="lead">Enter Your Location</p>
-            <input type="text" id="searchUser" class="form-control" placeholder="Location">
         </div>
-        <br>
-        <div id="profile"></div>
-    </div>
-    <div class="container text-center mt-2">
-        <button class="btn btn-primary" id="submit">Submit</button>
-    </div>
-    <div class="location">
-        <h1 class="location-timezone">Timezone</h1>
-        <p>Icon</p>
-    </div>
-    <div class="temperature">
-        <div class ="degree-section">
-            <h2 class="temperature-degree">75</h2>
-            <span>F</span>
+        <div class ="searchBar">
+            <input type="text" id="searchBar" placeholder="Location">
+            <button class="btn" id="submit">Submit</button>
         </div>
     </div>
-
+    <div class="information-container">
+        <div class="main-card">
+            <h2 class ="city">Atlanta (8/15/2019) </h2>
+            <ul>
+                <li class ="temperature">Temperature: 90.9 F</li>
+                <li class = "humidity">Humidity: 41%</li>
+                <li class = "windspeed">Wind Speed: 4.7 MPH</li>
+                <li class = "UVIndex">UV Index: 9.49</li>
+              </ul>
+        </div>
+        <div class="forecast-title">
+            <p>5-Day Forecast:</p>
+        </div>
+        <div class ="card-section">
+            <div class="card">
+                <h3 id ="day2title">8/16/2019</h3>
+                <ul>
+                    <li id = "temp2">Temp: 86.84 F</li>
+                    <li id = "humidity2">Humidity: 43%</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 id ="day3title">8/17/2019</h3>
+                <ul>
+                    <li id = "temp3">Temp: 86.84 F</li>
+                    <li id = "humidity3">Humidity: 43%</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 id ="day4title">8/18/2019</h3>
+                <ul>
+                    <li id = "temp4">Temp: 86.84 F</li>
+                    <li id = "humidity4">Humidity: 43%</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 id ="day5title">8/19/2019</h3>
+                <ul>
+                    <li id = "temp5">Temp: 86.84 F</li>
+                    <li id = "humidity5">Humidity: 43%</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 id ="day6title">8/20/2019</h3>
+                <ul>
+                    <li id = "temp6">Temp: 86.84 F</li>
+                    <li id = "humidity6">Humidity: 43%</li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
